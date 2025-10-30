@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useCallback, useEffect } from "react";
 import ReactFlow, {
   Background,
@@ -347,6 +348,9 @@ function JSONTreeVisualizer() {
               JSON Tree Visualizer
             </h1>
             <button
+              aria-label={
+                isDark ? "Switch to light mode" : "Switch to dark mode"
+              }
               onClick={() => setIsDark(!isDark)}
               className={`p-2 rounded-lg ${
                 isDark
@@ -366,6 +370,7 @@ function JSONTreeVisualizer() {
             {/* JSON Input */}
             <div className="lg:col-span-2">
               <textarea
+                aria-label="JSON input"
                 value={jsonInput}
                 onChange={(e) => setJsonInput(e.target.value)}
                 placeholder="Paste your JSON here..."
