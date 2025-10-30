@@ -1,3 +1,45 @@
+# JSON Tree Visualizer
+
+Interactive JSON Tree Visualizer built with Next.js and React Flow. Paste JSON, visualize it as a hierarchical tree, search with JSONPath, and more.
+
+## Features
+
+- Validate and visualize any JSON
+- React Flow tree with colored nodes (object/array/primitive)
+- JSONPath search (e.g. `$.user.address.city`, `items[0].name`) with highlight + auto-center
+- Zoom, pan, fit view, minimap
+- Click node to copy its JSON path
+- Tooltip on hover (shows path and value)
+- Dark/Light theme toggle (persisted)
+- Download canvas as image
+
+## Tech
+
+- Next.js 16, React 19, Tailwind CSS v4
+- React Flow for visualization
+- jsonpath-plus for robust JSONPath
+
+## Getting Started
+
+```bash
+pnpm i # or npm i / yarn
+pnpm dev
+```
+
+Open `http://localhost:3000`.
+
+## Deploy
+
+Deploy on Vercel/Netlify. For Vercel:
+
+```bash
+pnpm build && pnpm start
+```
+
+## Notes
+
+- The layout algorithm is a lightweight layered layout tuned for speed and clarity. For very large JSON, consider server-paginating nodes or virtualizing.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
