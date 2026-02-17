@@ -15,7 +15,7 @@ Interactive JSON Tree Visualizer built with Next.js and React Flow. Paste JSON, 
 
 ## Tech
 
-- Next.js 16, React 19, Tailwind CSS v4
+- Next.js 16.0.10, React 19, Tailwind CSS v4
 - React Flow for visualization
 - jsonpath-plus for robust JSONPath
 
